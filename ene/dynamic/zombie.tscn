@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://d3b7uw5ury7ax"]
+
+[ext_resource type="Script" uid="uid://b84l05fjsoedf" path="res://ene/dynamic/zombie.gd" id="1_kdb5n"]
+[ext_resource type="Texture2D" uid="uid://kphwfd7jdt7s" path="res://ene/dynamic/img/zombie/walk/Walk (1).png" id="2_0f5sy"]
+[ext_resource type="Texture2D" uid="uid://dvpt20khujw44" path="res://ene/dynamic/img/zombie/walk/Walk (2).png" id="3_5lg7l"]
+[ext_resource type="Texture2D" uid="uid://kjns3ywlqoe1" path="res://ene/dynamic/img/zombie/walk/Walk (3).png" id="4_xogln"]
+[ext_resource type="Texture2D" uid="uid://dplopaku7jerr" path="res://ene/dynamic/img/zombie/walk/Walk (4).png" id="5_8lwq8"]
+[ext_resource type="Texture2D" uid="uid://c4gs6ilkaiqr5" path="res://ene/dynamic/img/zombie/walk/Walk (5).png" id="6_7774a"]
+[ext_resource type="Texture2D" uid="uid://c7qh24ijj6dru" path="res://ene/dynamic/img/zombie/walk/Walk (6).png" id="7_naq4v"]
+[ext_resource type="Texture2D" uid="uid://bk2djhstwrvvy" path="res://ene/dynamic/img/zombie/walk/Walk (7).png" id="8_c3frr"]
+[ext_resource type="Texture2D" uid="uid://ddgf0shq1c6yy" path="res://ene/dynamic/img/zombie/walk/Walk (8).png" id="9_tcvur"]
+[ext_resource type="Texture2D" uid="uid://dvv64xrmavfs6" path="res://ene/dynamic/img/zombie/walk/Walk (9).png" id="10_3d084"]
+[ext_resource type="Texture2D" uid="uid://cb88gcb5clas0" path="res://ene/dynamic/img/zombie/walk/Walk (10).png" id="11_6w45o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dugda"]
+size = Vector2(173, 449)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gmtke"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0f5sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5lg7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xogln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8lwq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7774a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_naq4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c3frr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tcvur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3d084")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6w45o")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdb5n"]
+size = Vector2(234, 485)
+
+[node name="Zombie" type="CharacterBody2D" unique_id=1595305599]
+script = ExtResource("1_kdb5n")
+
+[node name="ZombieCol" type="CollisionShape2D" parent="." unique_id=1280143493]
+position = Vector2(28.5, 49.5)
+shape = SubResource("RectangleShape2D_dugda")
+
+[node name="ZombieAni" type="AnimatedSprite2D" parent="." unique_id=1503679619]
+sprite_frames = SubResource("SpriteFrames_gmtke")
+animation = &"walk"
+frame_progress = 0.27983472
+
+[node name="ZombieAtackAr" type="Area2D" parent="." unique_id=1346743813]
+
+[node name="ZombieAtackCol" type="CollisionShape2D" parent="ZombieAtackAr" unique_id=1279174577]
+position = Vector2(23, 49.5)
+shape = SubResource("RectangleShape2D_kdb5n")
+
+[node name="ZombieDetectRi" type="RayCast2D" parent="." unique_id=1165026692]
+position = Vector2(157, 216)
+target_position = Vector2(0, 100)
+
+[node name="ZombieDetectLe" type="RayCast2D" parent="." unique_id=1221731836]
+position = Vector2(-115, 226)
+target_position = Vector2(-2, 89)
+
+[connection signal="body_entered" from="ZombieAtackAr" to="." method="_on_ene_area_body_entered"]

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cexu55eqds8ol"]
+
+[ext_resource type="Texture2D" uid="uid://ftaiw0cst5i4" path="res://environment/background/img/layer8.PNG" id="1_mcebe"]
+[ext_resource type="Texture2D" uid="uid://dukrrc4vk7q0l" path="res://environment/background/img/layer6.PNG" id="2_kalov"]
+[ext_resource type="Texture2D" uid="uid://ds6dyct3diuhm" path="res://environment/background/img/layer0.PNG" id="3_hl7jr"]
+
+[node name="Background" type="Node2D" unique_id=451443416]
+
+[node name="LayerBackground" type="Parallax2D" parent="." unique_id=721308976]
+scroll_scale = Vector2(0.1, 1)
+repeat_size = Vector2(646, 0)
+repeat_times = 20
+
+[node name="SpriteBackground" type="Sprite2D" parent="LayerBackground" unique_id=550673577]
+texture_repeat = 2
+position = Vector2(-243, 3)
+scale = Vector2(4.0468745, 2.3999999)
+texture = ExtResource("1_mcebe")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 360)
+
+[node name="LayerMidle" type="Parallax2D" parent="." unique_id=1557968083]
+scroll_scale = Vector2(0.7, 1)
+repeat_size = Vector2(447, 0)
+repeat_times = 20
+
+[node name="SpriteMidle" type="Sprite2D" parent="LayerMidle" unique_id=1595678159]
+texture_repeat = 2
+position = Vector2(123, 506)
+scale = Vector2(0.97560966, 0.91944146)
+texture = ExtResource("2_kalov")
+centered = false
+region_rect = Rect2(0, 0, 328, 360)
+
+[node name="LayerFirst" type="Parallax2D" parent="." unique_id=989240954]
+scroll_scale = Vector2(0.3, 1)
+repeat_size = Vector2(1152, 0)
+repeat_times = 20
+
+[node name="SpriteFirst" type="Sprite2D" parent="LayerFirst" unique_id=225477003]
+position = Vector2(-371.99997, 261.99997)
+scale = Vector2(1.8703125, 1.2277778)
+texture = ExtResource("3_hl7jr")
+centered = false

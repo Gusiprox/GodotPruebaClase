@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://g6loqfx3u6xx"]
+
+[ext_resource type="Texture2D" uid="uid://5sbux4dqnbbg" path="res://life/img/heart.png" id="1_s325f"]
+[ext_resource type="Script" uid="uid://cii2ybxtp5pfh" path="res://life/life.gd" id="1_vbqe7"]
+
+[node name="Life" type="Control" unique_id=801345763]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vbqe7")
+
+[node name="LifeCon" type="HBoxContainer" parent="." unique_id=167822128]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 48.0
+offset_bottom = 53.0
+
+[node name="LifeLbl" type="Label" parent="LifeCon" unique_id=1805208806]
+layout_mode = 2
+text = "0"
+
+[node name="LifeImg" type="Sprite2D" parent="." unique_id=284391153]
+position = Vector2(116, 71)
+scale = Vector2(0.28125, 0.25195313)
+texture = ExtResource("1_s325f")

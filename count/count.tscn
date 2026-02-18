@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://brvi0j71s0nya"]
+
+[ext_resource type="Script" uid="uid://brn5ufrgo8ar8" path="res://count/count.gd" id="1_5q66o"]
+[ext_resource type="Texture2D" uid="uid://chtlehx47njv4" path="res://collections/coin/img/Bronze_1.png" id="2_sh2vg"]
+[ext_resource type="Texture2D" uid="uid://cbrpwl6r787i3" path="res://collections/coin/img/Bronze_2.png" id="3_w65jb"]
+[ext_resource type="Texture2D" uid="uid://c74pl2ua780qh" path="res://collections/coin/img/Bronze_3.png" id="4_1lo26"]
+[ext_resource type="Texture2D" uid="uid://kb6sc1eugrxg" path="res://collections/coin/img/Bronze_4.png" id="5_isry1"]
+[ext_resource type="Texture2D" uid="uid://62r5aou6l4nf" path="res://collections/coin/img/Bronze_5.png" id="6_o0sm2"]
+[ext_resource type="Texture2D" uid="uid://duhd1kwa1wmkn" path="res://collections/coin/img/Bronze_6.png" id="7_w5tcn"]
+[ext_resource type="Texture2D" uid="uid://dpr6w4nrcly15" path="res://collections/coin/img/Bronze_7.png" id="8_h8hux"]
+[ext_resource type="Texture2D" uid="uid://xpvv65s87jtw" path="res://collections/coin/img/Bronze_8.png" id="9_sg7on"]
+[ext_resource type="Texture2D" uid="uid://bclrsijl18ai1" path="res://collections/coin/img/Bronze_9.png" id="10_qb4jn"]
+[ext_resource type="Texture2D" uid="uid://djjgjr1bngl0" path="res://collections/coin/img/Bronze_10.png" id="11_prer5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nk3hu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sh2vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w65jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1lo26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_isry1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o0sm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w5tcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h8hux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sg7on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qb4jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_prer5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Count" type="Control" unique_id=260917966]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5q66o")
+
+[node name="HboxCount" type="HBoxContainer" parent="." unique_id=662411187]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.23
+anchor_bottom = 0.246
+offset_left = 137.0
+offset_top = 35.0
+offset_right = -87.95999
+offset_bottom = -84.408005
+
+[node name="LblCount" type="Label" parent="HboxCount" unique_id=1659106001]
+layout_mode = 2
+text = "0"
+
+[node name="AniCount" type="AnimatedSprite2D" parent="." unique_id=1795364866]
+position = Vector2(61, 52)
+scale = Vector2(0.20125224, 0.15957446)
+sprite_frames = SubResource("SpriteFrames_nk3hu")
