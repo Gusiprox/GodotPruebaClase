@@ -4,23 +4,33 @@
 [ext_resource type="Texture2D" uid="uid://dcn6bugyykgwp" path="res://player/img/idle/Idle__000.png" id="1_b8hi5"]
 [ext_resource type="Texture2D" uid="uid://brhfplhdey81t" path="res://player/img/idle/Idle__001.png" id="2_2uvqg"]
 [ext_resource type="Texture2D" uid="uid://bawq6onavnrqs" path="res://player/img/dead/Dead__001.png" id="2_art4l"]
+[ext_resource type="Texture2D" uid="uid://bfmqsp6hnb2u3" path="res://player/img/atack/Attack__000.png" id="2_n0b8q"]
 [ext_resource type="Texture2D" uid="uid://c6p81eack2d20" path="res://player/img/idle/Idle__002.png" id="3_1s1yo"]
 [ext_resource type="Texture2D" uid="uid://ctiu00pre4tn0" path="res://player/img/dead/Dead__002.png" id="3_fjxoa"]
+[ext_resource type="Texture2D" uid="uid://dqmm7ylrwosrn" path="res://player/img/atack/Attack__001.png" id="3_jfgyi"]
 [ext_resource type="Texture2D" uid="uid://ij5irek7o217" path="res://player/img/idle/Idle__003.png" id="4_5ejfk"]
+[ext_resource type="Texture2D" uid="uid://c1lk4yo5hysjw" path="res://player/img/atack/Attack__002.png" id="4_237xx"]
 [ext_resource type="Texture2D" uid="uid://c7h78frl5oddq" path="res://player/img/dead/Dead__003.png" id="4_gswnw"]
 [ext_resource type="Texture2D" uid="uid://raf2xie0vqai" path="res://player/img/idle/Idle__004.png" id="5_jd2rm"]
+[ext_resource type="Texture2D" uid="uid://c4sb3wuuftaju" path="res://player/img/atack/Attack__003.png" id="5_wpyo2"]
 [ext_resource type="Texture2D" uid="uid://vpyvls55ux5j" path="res://player/img/dead/Dead__004.png" id="5_xcnuv"]
+[ext_resource type="Texture2D" uid="uid://bkxad2sygi0ql" path="res://player/img/atack/Attack__004.png" id="6_7crtr"]
 [ext_resource type="Texture2D" uid="uid://sxm3gvpv2m52" path="res://player/img/dead/Dead__005.png" id="6_j55il"]
 [ext_resource type="Texture2D" uid="uid://dy2767ap1jn7p" path="res://player/img/idle/Idle__005.png" id="6_q28gw"]
 [ext_resource type="Texture2D" uid="uid://xmm4fvkce7xv" path="res://player/img/idle/Idle__006.png" id="7_ge24q"]
 [ext_resource type="Texture2D" uid="uid://bgacblx6h45di" path="res://player/img/dead/Dead__006.png" id="7_hjies"]
+[ext_resource type="Texture2D" uid="uid://u3i8pefppnie" path="res://player/img/atack/Attack__005.png" id="7_vgvch"]
+[ext_resource type="Texture2D" uid="uid://b7yvgw3l55qxe" path="res://player/img/atack/Attack__006.png" id="8_a1u5o"]
 [ext_resource type="Texture2D" uid="uid://dgoynavvw3ipy" path="res://player/img/dead/Dead__007.png" id="8_mmwog"]
 [ext_resource type="Texture2D" uid="uid://ccwp2tdl6x2ga" path="res://player/img/idle/Idle__007.png" id="8_pnw6m"]
 [ext_resource type="Texture2D" uid="uid://dla37e6rval06" path="res://player/img/idle/Idle__008.png" id="9_1so5t"]
+[ext_resource type="Texture2D" uid="uid://ccqqjlrstiqyb" path="res://player/img/atack/Attack__007.png" id="9_3dxkp"]
 [ext_resource type="Texture2D" uid="uid://ddximocim2eod" path="res://player/img/dead/Dead__008.png" id="9_8pxes"]
+[ext_resource type="Texture2D" uid="uid://b1m1c0lym0ks3" path="res://player/img/atack/Attack__008.png" id="10_6wior"]
 [ext_resource type="Texture2D" uid="uid://xdabc087y4j" path="res://player/img/idle/Idle__009.png" id="10_55jnj"]
 [ext_resource type="Texture2D" uid="uid://b1ge2nhkyfm03" path="res://player/img/dead/Dead__009.png" id="10_fmu53"]
 [ext_resource type="Texture2D" uid="uid://pp7paw6s848u" path="res://player/img/jump/Jump__000.png" id="11_dx5ib"]
+[ext_resource type="Texture2D" uid="uid://cbvmkyavgm6cu" path="res://player/img/atack/Attack__009.png" id="11_p5tca"]
 [ext_resource type="Texture2D" uid="uid://djnf76vcft7vy" path="res://player/img/jump/Jump__001.png" id="12_a2xo5"]
 [ext_resource type="Texture2D" uid="uid://duintvqoj0hn6" path="res://player/img/jump/Jump__002.png" id="13_art4l"]
 [ext_resource type="Texture2D" uid="uid://b6pc6b1obnpe0" path="res://player/img/jump/Jump__003.png" id="14_fjxoa"]
@@ -45,6 +55,41 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6wior"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n0b8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jfgyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_237xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wpyo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7crtr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vgvch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a1u5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3dxkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6wior")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p5tca")
+}],
+"loop": false,
+"name": &"atack",
+"speed": 30.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_art4l")
@@ -186,13 +231,18 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5tca"]
 size = Vector2(46.82538, 32.59386)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n0b8q"]
+radius = 74.0
+height = 528.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1619877660]
 script = ExtResource("1_2uvqg")
-friction = 1500
 
 [node name="PlayerAni" type="AnimatedSprite2D" parent="." unique_id=1813924109]
 sprite_frames = SubResource("SpriteFrames_6wior")
-animation = &"dead"
+animation = &"atack"
+frame = 9
+frame_progress = 1.0
 
 [node name="PlayerCol" type="CollisionShape2D" parent="." unique_id=5948676]
 position = Vector2(12.000001, 25.999996)
@@ -200,10 +250,10 @@ scale = Vector2(5.040002, 11.719998)
 shape = SubResource("RectangleShape2D_p5tca")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514557594]
-limit_left = -1000
+limit_left = -3000
 limit_top = 200
-limit_right = 50000
-limit_bottom = 1000
+limit_right = 4000
+limit_bottom = 400
 limit_smoothed = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=821904002]
@@ -222,3 +272,16 @@ offset_bottom = 68.0
 
 [node name="PlayerTimer" type="Timer" parent="." unique_id=2061394473]
 wait_time = 3.0
+
+[node name="PlayerAtackTimer" type="Timer" parent="." unique_id=147186284]
+wait_time = 0.1
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2016391581]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=447538117]
+position = Vector2(218, 18)
+shape = SubResource("CapsuleShape2D_n0b8q")
+disabled = true
+debug_color = Color(0.910615, 0.24868369, 0.42290747, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -7,7 +7,11 @@ extends CharacterBody2D
 var sentido = 1
 
 func _ready() -> void:
+	add_to_group("enemies")
 	$ZombieAni.play("walk")
+
+func dealDamage():
+	queue_free()
 
 func _on_ene_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("jugadores"):
